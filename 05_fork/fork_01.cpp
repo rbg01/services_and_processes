@@ -21,21 +21,22 @@ int main(){
     if(child_id == 0){
         
         printf("Estás en hijo, con id: %i\n", (int)child_id);
-        printf("La id del padre es: %i\n",getpid()) ;
+        printf("Y su padre es: %i\n",getpid()) ;
     }
     else{
         printf("sigues en el padre, with id: %i\n", getpid());
+        printf("El hijo, con id: %i\n", (int)child_id);
     }
     
     return 0;
     
 }
 //
-//Produce la salida:
-//La id de main() es: 1903
-//sigues en el padre, with id: 1903
+//La id de main() es: 1535
+//sigues en el padre, with id: 1535
+//El hijo, con id: 1536
 //Estás en hijo, con id: 0
-//La id del padre es: 1904
+//La id del padre es: 1536
 //
 //
 //

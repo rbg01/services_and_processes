@@ -25,7 +25,9 @@ int main(){
         printf("La id del hijo es: %i\n", (int)child_id);
     }
     else{
+        //Esto nunca se ejecuta
         printf("con un poco de suerte me la comen, with id: %i\n", getpid());
+        printf("La id del hijo es: %i\n", (int)child_id);
     }
     
     return 0;

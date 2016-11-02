@@ -25,7 +25,7 @@ int main (int argc, char *argv[]){
     int salida;
 
     char *my_program[] = {
-        "open",
+      
         "-a",
         "/Applications/FaceTime.app",
         NULL

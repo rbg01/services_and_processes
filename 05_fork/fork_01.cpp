@@ -30,3 +30,13 @@ int main(){
     return 0;
     
 }
+//
+//Produce la salida:
+//La id de main() es: 1903
+//sigues en el padre, with id: 1903
+//Estás en hijo, con id: 0
+//La id del padre es: 1904
+//
+//
+//
+//

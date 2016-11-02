@@ -15,7 +15,6 @@ int main(int argc, const char *argv[]){
 
     char *my_program[] = {
 
-        "open",
         "-a",
         "/Applications/FaceTime.app",
         NULL
@@ -29,8 +28,7 @@ int main(int argc, const char *argv[]){
         printf("Esto no se ejecuta normalmente...\n");
     }
 
-
-
+    printf("si ves ésto, es que main() está acabado\n");
 
 
 	return EXIT_SUCCESS;

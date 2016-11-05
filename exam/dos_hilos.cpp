@@ -63,6 +63,7 @@ void *print_primos(void *parameter){
     for (int i=0; i<numero; i++){
         fprintf(stderr," %i\n", primo[i]);
         sleep(1);
+        fflush(stderr);
     }
 
     return NULL;

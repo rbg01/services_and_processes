@@ -11,7 +11,8 @@
 #include <unistd.h>
 #include <time.h>
 #include <stdlib.h>
-
+#define N 100
+// Funcion es_primo
 bool es_primo(int candidato){
     
     for (int divisor=2; divisor<candidato; divisor++)
@@ -23,7 +24,7 @@ bool es_primo(int candidato){
 
 
 void *print_crono(void *parameter){
-    
+    //cast al parameter
     int numero = *((int*)parameter);
     
     int hours, mins, secs;
@@ -47,10 +48,10 @@ void *print_crono(void *parameter){
 }
 
 void *print_primos(void *parameter){
-    
+    //cast al parameter
     int numero = *((int*)parameter);
     
-    int primo[numero];
+    int primo[N];
     
     for (int encontrados=0, este_numero=2; encontrados<numero; este_numero++){
         
@@ -81,7 +82,6 @@ int main(int argc, const char **argv){
     
     pthread_join(thread_crono, NULL);
     pthread_join(thread_primos, NULL);
-    
     return 0;
     
 }

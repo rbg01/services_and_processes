@@ -1,7 +1,7 @@
 
 /*	Creación de un hilo */
  /*	el hilo imprime 'X'*/
- /*	y main imprime 'O' */
+ /*	y el otro hilo imprime 'O' */
 
 #include <pthread.h>
 #include <stdio.h>
